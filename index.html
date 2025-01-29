@@ -1,55 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-
-    <link
-      rel="icon"
-      href="resources/favicon.ico"
-      type="image/x-icon"
-      sizes="96x96"
-    />
-
-    <title>GitHub Profile | devChallenges.io</title>
-
-    <style type="text/tailwindcss">
-      @theme { 
-        --color-slate-gray: #97A3B6;   
-        --color-light-gray: #CDD5E0;
-        --color-dark-navy: #111729;
-        --color-dark-gray: #20293A;
-        --color-slate-navy: #364153;
-        --color-slate-navy: #111729;
-        --color-dark-blue: #1D1B48; 
-       }    
-    </style>
-    
+    <title>Vite + React</title>
   </head>
-  <body class="w-full h-screen bg-blue-500">
-    
-    <main>
-      <div class="h-[100px] md:h-[200px] relative">
-        <img 
-          src="resources/hero-image-github-profile-sm.jpg" 
-          alt="phone background"
-          class="md:hidden w-full h-[100%] object-center object-cover"
-        >
-        <img 
-          src="resources/hero-image-github-profile.jpg" 
-          alt="desktop background"
-          class="hidden md:flex w-[100%] h-[100%] object-center object-cover"
-        >
-
-        <div class="absolute top-0 left-0 w-full h-full">
-          <input 
-            type="text"
-            placeholder="github" 
-            class="bg-dark-gray text-white font-semibold"
-          >
-        </div>
-      </div>
-    </main>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
